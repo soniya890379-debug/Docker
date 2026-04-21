@@ -1,2 +1,5 @@
-FROM nginx:latest
-COPY . /usr/share/nginx/html
+FROM python 3.13.3
+WORKDIR /app
+COPY ..
+CMD [echo "Hello form docker"]
+
